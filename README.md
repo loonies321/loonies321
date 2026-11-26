@@ -2,10 +2,10 @@
 
 # Maksim Trushin
 
-**Vibe coder · Python developer · data analyst · DICOM & radiotherapy TPS tooling · author of uncompressMRI**
+**Vibe coder · Python developer · data analyst · DevOps-ish · DICOM & radiotherapy TPS tooling · author of uncompressMRI**
 
 I build small, dependable tools that make DICOM behave — so Eclipse, Aria and Monaco
-can import what the scanner actually wrote. A bit of DevOps when the build breaks.
+can import what the scanner actually wrote.
 
 [![uncompressMRI](https://img.shields.io/github/v/release/loonies321/uncompressMRI?style=flat-square&label=uncompressMRI&color=2f6f9f)](https://github.com/loonies321/uncompressMRI)
 [![Downloads](https://img.shields.io/github/downloads/loonies321/uncompressMRI/total?style=flat-square&color=2f6f9f)](https://github.com/loonies321/uncompressMRI/releases)
@@ -54,6 +54,10 @@ without loading a 1 GB source file.
 ![Tkinter](https://img.shields.io/badge/Tkinter-stdlib-FFD43B?style=flat-square)
 ![PyInstaller](https://img.shields.io/badge/PyInstaller-Windows-2f6f9f?style=flat-square)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![DICOM](https://img.shields.io/badge/DICOM-medical%20imaging-005A9C?style=flat-square)
 ![Apache 2.0](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square)
 
