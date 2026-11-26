@@ -19,18 +19,19 @@ can import what the scanner actually wrote.
 
 ### [uncompressMRI](https://github.com/loonies321/uncompressMRI)
 
-Enhanced multi-frame MRI → single-frame DICOM slices for Eclipse / Aria / Monaco.
+Enhanced multi-frame **MR/CT** → single-frame DICOM slices for Eclipse / Aria / Monaco.
 Windows `.exe`, CLI and GUI; no Python required.
 
 <a href="https://github.com/loonies321/uncompressMRI">
   <img src="https://raw.githubusercontent.com/loonies321/uncompressMRI/main/docs/gui-howto-en.png" width="760" alt="uncompressMRI: five-step GUI walkthrough">
 </a>
 
-**The problem.** A scanner writes the whole series as `Enhanced MR Image Storage`,
-but a treatment planning system expects one `MR Image Storage` file per slice.
-uncompressMRI keeps each frame's geometry, regenerates Study and FrameOfReference
-UIDs deterministically, repairs truncated Siemens pixel data, and previews slices
-without loading a 1 GB source file.
+**The problem.** A scanner writes the whole series as `Enhanced MR Image Storage`
+or `Enhanced CT Image Storage`, but a treatment planning system expects one
+`MR Image Storage` / `CT Image Storage` file per slice. uncompressMRI keeps each
+frame's geometry, regenerates Study and FrameOfReference UIDs deterministically,
+normalizes charset and missing TPS tags, repairs truncated Siemens pixel data,
+and previews slices without loading a 1 GB source file.
 
 [Source](https://github.com/loonies321/uncompressMRI) ·
 [Download](https://github.com/loonies321/uncompressMRI/releases/latest) ·
@@ -48,7 +49,7 @@ without loading a 1 GB source file.
 
 ## Toolbox
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
 ![pydicom](https://img.shields.io/badge/pydicom-2.3%2B-2f6f9f?style=flat-square)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Tkinter](https://img.shields.io/badge/Tkinter-stdlib-FFD43B?style=flat-square)
@@ -63,7 +64,7 @@ without loading a 1 GB source file.
 
 ## Currently
 
-- Improving **uncompressMRI**: faster slice preview, UID handling, Windows packaging.
+- Improving **uncompressMRI** 2.4.0: MR/CT support, conservative TPS harmonization, ~30% faster conversion, Windows packaging.
 - Exploring **contour QA and auto-segmentation** for radiotherapy research.
 - Open to collaboration on DICOM/TPS integration and clinical data pipelines.
 
@@ -78,4 +79,4 @@ without loading a 1 GB source file.
 - Security: [private advisory](https://github.com/loonies321/uncompressMRI/security/advisories/new)
 - Open to collaboration on DICOM, radiotherapy TPS integration and contour QA.
 
-<div align="center"><sub>🇷🇺 Вайбкодер, Python-разработчик и аналитик данных. DICOM, лучевая терапия, Eclipse / Aria / Monaco.</sub></div>
+<div align="center"><sub>🇷🇺 Вайбкодер, Python-разработчик и аналитик данных. DICOM, МРТ/КТ, лучевая терапия, Eclipse / Aria / Monaco.</sub></div>
